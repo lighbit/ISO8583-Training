@@ -63,8 +63,8 @@ public class ApplicationClient {
         logonResponse.put(70, "001");
 
         BigInteger bitmapResponse = client.hitungBitMap(logonResponse);
-        System.out.println("Receive Bit!");
-        System.out.println("\nBinary [" + bitmapResponse.toString(2) + "]");
+        System.out.println("\nReceive Bit!");
+        System.out.println("Binary [" + bitmapResponse.toString(2) + "]");
         System.out.println("Hexa: [" + bitmapResponse.toString(16) + "]");
 
         client.kirim(strLogonRequest);
